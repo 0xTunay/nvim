@@ -4,6 +4,7 @@
 this repository shows my configuration in NeoVim
 
 How install NeoVim 8+ version?
+
 Setup 0: you need uninstall any neovim you might have installe
 ~~~ 
   sudo apt remove neovim -y
