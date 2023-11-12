@@ -9,6 +9,7 @@ Setup 0: you need uninstall any neovim you might have installe
   sudo apt remove neovim -y
 ~~~ 
 Step 1: Download the appimage from https://github.com/neovim/neovim/releases
+
 Step 2: Make it executable with
   ```
    +x neovim.appimage
