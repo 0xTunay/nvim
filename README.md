@@ -10,7 +10,9 @@ Setup 0: you need uninstall any neovim you might have installe
 ~~~ 
 Step 1: Download the appimage from https://github.com/neovim/neovim/releases
 Step 2: Make it executable with
-  ``` +x neovim.appimage```
+  ```
+   +x neovim.appimage
+  ```
 Step 3: Place it in you $PATH 
   ```
     sudo mv neovim.appimage /urs/local/nvim
