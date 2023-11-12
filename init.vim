@@ -21,6 +21,7 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
+Plug 'https://github.com/vim-scripts/c.vim.git'
 
 
 call plug#end()
@@ -42,4 +43,4 @@ let g:airline#extensions#xkblayout#enabled = 0 "Про это позже рас�
 
 
 
-source /home/tunay/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/iceberg.vim
+source /home/tunay/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/space-vim-dark.vim
