@@ -6,31 +6,18 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
-let g:airline_theme='one'
-
+:set paste
+:set nopaste
+:set syntastic_enable=1
 call plug#begin()
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/ryanoasis/vim-devicons.git'
+Plug 'https://github.com/preservim/nerdtree.git'
+Plug 'https://github.com/rafi/awesome-vim-colorschemes.git'
+Plug 'https://github.com/vim-syntastic/syntastic.git'
 
-Plug 'ErichDonGubler/vim-sublime-monokai' "Добавьте это в список плагинов
-Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-Plug 'https://github.com/preservim/nerdtree' " NerdTree
-Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
-Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-Plug 'https://github.com/vim-scripts/c.vim.git'
-
-
+source /home/tunay/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/space-vim-dark.vim
 call plug#end()
-colorscheme sublimemonokai "Добавьте это НЕ в список плагинов
-
-
-nnoremap <C-N> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -40,7 +27,7 @@ let g:airline#extensions#keymap#enabled = 0 "Не показывать теку�
 let g:airline_section_z = "\ue0a1:%l/%L Col:%c" "Кастомная графа положения курсора
 let g:Powerline_symbols='unicode' "Поддержка unicode
 let g:airline#extensions#xkblayout#enabled = 0 "Про это позже расскажу
+if !has('nvim') | set viminfo+=n~/.config/vim/viminfo | endif
 
-
-
-source /home/tunay/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/space-vim-dark.vim
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-T> :NERDTreeToggle<CR>
