@@ -35,3 +35,5 @@ Step 4: Press ``` ESC ``` then ``` Shift + ; ``` and write ``` PlugInstall ```, 
 
 Step 5: write ``` wq ```
 
+to install coc, then write CocInstall coc-cland
+
