@@ -37,3 +37,9 @@ Step 5: write ``` wq ```
 
 to install coc, then write CocInstall coc-cland
 
+
+for Clang 
+```
+
+CocInstall coc-clangd
+```
